@@ -1,0 +1,65 @@
+POST http://localhost:3000/api/comics/add
+Content-Type: application/json
+
+{
+     "Name":"Huyết Ma Nhân",
+    "NameCommon":"adsad",
+    "Summary":"asd",
+    "Author":"asds",
+    "Status":"sad",
+    "Avatar":"sad",
+    "Category":["Hanh dong","trinh tham"]
+}
+
+content
+
+###
+GET http://localhost:3000/Comics/Pagination/1
+###
+get http://localhost:3000/comics/pagination/1
+###
+get http://localhost:3000/comics/search/QUYỀN BÁ THIÊN HẠ
+###
+get  http://localhost:3000/api/Comics/Search/advanced/Hành động,trinh thám&0&Đang tiến hành
+###
+PATCH http://localhost:3000/api/comics/patch
+Content-Type: application/json
+
+{
+    "Name":"Huyết Ma Nhân",
+    "NameCommon":"adsad",
+    "Summary":"asd",
+    "Author":"asds",
+    "Status":"sad",
+    "Avatar":"sad",
+    "View" : 0,
+    "Chappter" : {"1":["ngu lol","sadads"]},
+    "Follow" : 0,
+    "Category":["Hanh dong","trinh tham"]
+}
+###
+GET http://localhost:3000/api/users/getall
+###
+post http://localhost:3000/api/users/add
+Content-Type: application/json
+
+{
+    "Name":"asd",
+    "User":"asd",
+    "Pass":"sadsad",
+    "ID":"123456"
+}
+###
+delete http://localhost:3000/api/users/delete/5dbaaff9f67f79203064cb23
+###
+get http://localhost:3000/api/users/search/tu
+
+###
+PATCH http://localhost:3000/api/users/update
+Content-Type: application/json
+
+{   
+    "ID":"5dbab3e1d0760a0e3c3e523d",
+    "Name":"Su Huu Nghia",
+    "Avatar":"asd"
+}
